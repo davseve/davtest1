@@ -10,4 +10,4 @@ runs:
   using: "composite"
   steps:
     - shell: bash
-      run: echo "RAND is ${rand}"
+      run: echo "RAND is $rand"

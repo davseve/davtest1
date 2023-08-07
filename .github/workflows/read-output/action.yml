@@ -1,15 +1,13 @@
-Read output
-
 name: 'Read output'
 description: 'Read output var'
+
 inputs:
-  RAND:  # id of input
+  rand:
     description: 'some rand test'
     required: false
-  
+
 runs:
   using: "composite"
   steps:
-    - name: Echo Random number
-      run: echo "RAND is: ${RAND}"
-      shell: bash
+    - shell: bash
+      run: echo "RAND is ${rand}"

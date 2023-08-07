@@ -9,6 +9,6 @@ jobs:
     steps:
       - name: Call Hello World 
         id: hello-world
-        uses: ./.github/workflows/hello-world-action/action.yml
+        uses: ./.github/workflows/hello-world-action
       - name: Comment
         run: echo 'Output - ${{ steps.hello-world.outputs.random-number }}'

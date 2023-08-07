@@ -1,5 +1,7 @@
 name: My action 
 
+on:
+  workflow_dispatch:
 
 jobs:
   test-job:

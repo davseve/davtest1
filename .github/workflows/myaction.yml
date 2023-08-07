@@ -2,7 +2,11 @@ name: My action
 
 on:
   workflow_dispatch:
-
+outputs:
+  random-number:
+    description: "Random number"
+    value: ${{ steps.random-number-generator.outputs.random-number }}
+    
 jobs:
   test-job:
     runs-on: ubuntu-22.04

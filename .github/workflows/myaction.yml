@@ -14,3 +14,7 @@ jobs:
         uses: ./.github/workflows/hello-world-action
       - name: Comment
         run: echo 'Output - ${{ steps.hello-world.outputs.random-number }}'
+      - name: Composite Check
+        uses: ./.github/workflows/read-output
+        with: 
+          RAND: ${{ steps.hello-world.outputs.random-number }}

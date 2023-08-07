@@ -16,5 +16,5 @@ runs:
   steps:
     - name: Random number generator
       id: random-number-generator
-      run: "random-number=$(echo 123)" >> $GITHUB_OUTPUT
+      run: "random-number=echo 123" >> $GITHUB_OUTPUT
       shell: bash

@@ -7,6 +7,8 @@ jobs:
   test-job:
     runs-on: ubuntu-22.04
     steps:
+      - name: Checkout
+        uses: actions/checkout@v1
       - name: Call Hello World 
         id: hello-world
         uses: ./.github/workflows/hello-world-action

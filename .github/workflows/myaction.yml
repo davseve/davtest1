@@ -17,4 +17,4 @@ jobs:
       - name: Composite Check
         uses: ./.github/workflows/read-output
         with: 
-          RAND: ${{ steps.hello-world.outputs.random-number }}
+          rand: echo ${{ steps.hello-world.outputs.random-number }}
